@@ -8,6 +8,10 @@ chsh $USER -s $(which fish)
 
 git clone https://github.com/valtyr/dotfiles.git ~/.dotfiles
 
+mkdir -p ~/.config
+mkdir -p ~/.config/nvim
+mkdir -p ~/.config/fish
+
 ln -fs ~/.dotfiles/init.vim ~/.config/nvim/init.vim
 ln -fs ~/.dotfiles/config.fish ~/.config/fish/config.fish
 ln -fs ~/.dotfiles/update.fish ~/.config/fish/functions/update-dotfiles.fish
