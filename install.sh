@@ -1,8 +1,8 @@
 #! /bin/bash
 set -euo pipefail
 
-apt install fish neovim
-apt install hub
+apt update
+apt install fish neovim hub mosh
 
 chsh $USER -s $(which fish)
 
