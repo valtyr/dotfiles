@@ -1,11 +1,6 @@
 #! /bin/bash
 set -euo pipefail
 
-sudo apt update
-sudo apt install fish neovim hub mosh
-
-chsh $USER -s $(which fish)
-
 git clone https://github.com/valtyr/dotfiles.git ~/.dotfiles
 
 mkdir -p ~/.config
